@@ -1,16 +1,30 @@
-var query = "chicken";
-var health = "gluten-free";
-var time = "60+";
-var cuisine = "indian";
+var query = "burger";
+var health = "vegan";
+var diet = "vegetarian";
+var excludeIngredients = "eggs";
+var intolerances = "gluten"
+var cuisine = "italian";
 var mealType = "snack";
+var calories = "300+"
+var time = "30+"
 
-
-var qURL = "https://api.edamam.com/search?q=" + query + "&health=" + health + "&cuisineType=" + cuisine + "&mealType=" + mealType + "&time=" + time + "&app_id=413e27d6&app_key=8db158675e2527545a955c92d442d938";
+var qURLFirst = "https://api.spoonacular.com/recipes/search?query=" + query + "&excludeIngredients=" + excludeIngredients + "&intolerances=" + intolerances + "&diet=" + diet + "&number=10&apiKey=874efe7482a6472e93947420655c6cad";
 
 
 $.ajax({
-    url: qURL,
+    url: qURLFirst,
     method: "GET"
-  }).then(function(response) {
-    console.log(response);
+  }).then(function(response2) {
+    console.log(response2);
+    var recipeID = response2.results[0].id;
+
+
+    qURLThird = "https://api.spoonacular.com/recipes/" + recipeID + "/information?includeNutrition=false&apiKey=874efe7482a6472e93947420655c6cad";
+
+    $.ajax({
+        url: qURLSecond,
+        method: "GET"
+    }).then(function(response3) {
+        console.log(response3);
+    })
   });
