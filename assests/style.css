@@ -1,0 +1,16 @@
+.container.col.s12.m4 {
+    padding: 0 20px;
+}
+
+#banner {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}   
+
+#rtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
