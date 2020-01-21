@@ -1,11 +1,25 @@
 $(document).ready(function () {
 
+  var drink = 0
 
-  drink = $("#").val();
-  var qURL = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=" + drink
+  var Meats = "Beef"
+
+  // var Meats = $("#").val()
+  function setDrink() {
+    if (Meats === "Beef") {
+      drink = "rum";
+      console.log(Meats);
+    }
+  }
+  setDrink();
+
+
+
+
+  var qURL = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=" + drink;
   // var qURL = "https://www.thecocktaildb.com/api/json/v1/1/random.php"
 
-
+  // Call that randomizes the drink results based on the above Meat entry by the user.
   $.ajax({
     url: qURL,
     method: "GET"
@@ -13,23 +27,51 @@ $(document).ready(function () {
     console.log(response);
     console.log(qURL);
 
-    if (drink === "Beef") {
-      var allRum = response.drinks
-      var drinkID = respose.drinks.idDrink
-      var drinkIMG = response.drinks.strDrinkThumb
+    var drinkList = response.drinks
+    console.log(response.drinks);
+
+    var drinkID1 = response.drinks[Math.ceil(Math.random() * drinkList.length)];
+    var drinkID2 = response.drinks[Math.ceil(Math.random() * drinkList.length)];
+    var drinkID3 = response.drinks[Math.ceil(Math.random() * drinkList.length)];
+
+    console.log(drinkID1);
+    console.log(drinkID2);
+    console.log(drinkID3);
+
+    // Call that pulls the ID from the above randomized drinks - needed in order to pull the ingredients & recipe list from the drink API
+
+    $.ajax({
+      url: qURL,
+      method: "GET"
+    }).then(function (response) {
+      console.log(response);
+      console.log(qURL);
+
+      drinkResult1 = drinkID1.idDrink;
+      drinkResult2 = drinkID2.idDrink;
+      drinkResult3 = drinkID3.idDrink;
+
+      console.log(drinkResult1);
+      console.log(drinkResult2);
+      console.log(drinkResult3);
+
+      var qURLdrinkResult1 = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=" + drinkResult1;
+
       $.ajax({
-        url: https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=rum,
+        url: qURLdrinkResult1,
         method: "GET"
-      })(function (response) {
-        console.log(response.drinks);
-        for (let index = 0; index < drinks.length; index++) {
-          console.log(response);
+      }).then(function (response) {
+        console.log(response);
+        console.log(qURLdrinkResult1);
 
-        }
+        var drinkDisplay1 = response.drinks.strIngredient1; 
 
-
+        console.log(drinkDisplay1);
 
       });
 
-
     });
+
+    })
+
+});
