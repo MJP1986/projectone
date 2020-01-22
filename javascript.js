@@ -1,6 +1,5 @@
-<<<<<<< HEAD
-// MEvans JS - JS that manages the drink calls
-=======
+// Jack's JS - JS that manages the food calls
+@@ -1,3 +1,51 @@
 var query = "burger";
 var health = "vegan";
 var diet = "vegetarian";
@@ -49,7 +48,9 @@ $.ajax({
     console.log(foodImgArray);
     console.log(foodTitleArray)
   });
->>>>>>> 13da5bb25764e95f013c8963c4c7b7fd295b51f1
+
+
+// MEvans JS - JS that manages the drink calls
 $(document).ready(function () {
 
   var drink = 0
@@ -117,19 +118,19 @@ $(document).ready(function () {
         console.log(response);
         console.log(qURLdrinkResult1);
 
-        var drinkDisplay1 = (response.drinks[0].strIngredient1 + ", " + 
-        response.drinks[0].strIngredient2 + ", " + 
-        response.drinks[0].strIngredient3 + ", " + 
-        response.drinks[0].strIngredient4 + ", " + 
-        response.drinks[0].strIngredient5 + ", " + 
-        response.drinks[0].strIngredient6 + ", " + 
-        response.drinks[0].strIngredient7 + ", " + 
-        response.drinks[0].strIngredient8 + ", " + 
-        response.drinks[0].strIngredient9 + ", " + 
-        response.drinks[0].strIngredient10);
+        var drinkDisplay1 = (response.drinks[0].strIngredient1 + ", " +
+          response.drinks[0].strIngredient2 + ", " +
+          response.drinks[0].strIngredient3 + ", " +
+          response.drinks[0].strIngredient4 + ", " +
+          response.drinks[0].strIngredient5 + ", " +
+          response.drinks[0].strIngredient6 + ", " +
+          response.drinks[0].strIngredient7 + ", " +
+          response.drinks[0].strIngredient8 + ", " +
+          response.drinks[0].strIngredient9 + ", " +
+          response.drinks[0].strIngredient10);
 
         console.log(drinkDisplay1);
-        
+
         // This call pulls the second ingredient list
         var qURLdrinkResult2 = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=" + drinkResult2;
 
@@ -139,23 +140,23 @@ $(document).ready(function () {
         }).then(function (response) {
           console.log(response);
           console.log(qURLdrinkResult2);
-  
+
           var drinkDisplay2 = (response.drinks[0].strIngredient1 + ", " +
-          response.drinks[0].strIngredient2 + ", " + 
-          response.drinks[0].strIngredient3 + ", " + 
-          response.drinks[0].strIngredient4 + ", " + 
-          response.drinks[0].strIngredient5 + ", " + 
-          response.drinks[0].strIngredient6 + ", " + 
-          response.drinks[0].strIngredient7 + ", " + 
-          response.drinks[0].strIngredient8 + ", " + 
-          response.drinks[0].strIngredient9 + ", " + 
-          response.drinks[0].strIngredient10);
-  
+            response.drinks[0].strIngredient2 + ", " +
+            response.drinks[0].strIngredient3 + ", " +
+            response.drinks[0].strIngredient4 + ", " +
+            response.drinks[0].strIngredient5 + ", " +
+            response.drinks[0].strIngredient6 + ", " +
+            response.drinks[0].strIngredient7 + ", " +
+            response.drinks[0].strIngredient8 + ", " +
+            response.drinks[0].strIngredient9 + ", " +
+            response.drinks[0].strIngredient10);
+
           console.log(drinkDisplay2);
-           
-  
+
+
         });
-        
+
         // This call pulls the third ingredient list
         var qURLdrinkResult3 = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=" + drinkResult3;
 
@@ -165,27 +166,27 @@ $(document).ready(function () {
         }).then(function (response) {
           console.log(response);
           console.log(qURLdrinkResult3);
-  
-          var drinkDisplay3 = (response.drinks[0].strIngredient1 + ", " + 
-          response.drinks[0].strIngredient2 + ", " + 
-          response.drinks[0].strIngredient3 + ", " + 
-          response.drinks[0].strIngredient4 + ", " + 
-          response.drinks[0].strIngredient5 + ", " + 
-          response.drinks[0].strIngredient6 + ", " + 
-          response.drinks[0].strIngredient7 + ", " + 
-          response.drinks[0].strIngredient8 + ", " + 
-          response.drinks[0].strIngredient9 + ", " + 
-          response.drinks[0].strIngredient10);
-  
+
+          var drinkDisplay3 = (response.drinks[0].strIngredient1 + ", " +
+            response.drinks[0].strIngredient2 + ", " +
+            response.drinks[0].strIngredient3 + ", " +
+            response.drinks[0].strIngredient4 + ", " +
+            response.drinks[0].strIngredient5 + ", " +
+            response.drinks[0].strIngredient6 + ", " +
+            response.drinks[0].strIngredient7 + ", " +
+            response.drinks[0].strIngredient8 + ", " +
+            response.drinks[0].strIngredient9 + ", " +
+            response.drinks[0].strIngredient10);
+
           console.log(drinkDisplay3);
-           
-  
-        }); 
+
+
+        });
 
       });
 
     });
 
-    })
+  })
 
 });
