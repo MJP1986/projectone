@@ -1,3 +1,4 @@
+// MEvans JS - JS that manages the drink calls
 $(document).ready(function () {
 
   var drink = 0
