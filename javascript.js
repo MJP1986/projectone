@@ -56,7 +56,7 @@ $(document).ready(function () {
       console.log(drinkResult2);
       console.log(drinkResult3);
 
-      // This call pulls the ingredient list for the first randomized drink response from above
+      // This call pulls the ingredient list from the first randomized drink result above
       var qURLdrinkResult1 = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=" + drinkResult1;
 
       $.ajax({
@@ -78,19 +78,18 @@ $(document).ready(function () {
         response.drinks[0].strIngredient10);
 
         console.log(drinkDisplay1);
-       
-        // This callp pulls the ingredients for the second response from above
+        
+        // This call pulls the second ingredient list
         var qURLdrinkResult2 = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=" + drinkResult2;
-
 
         $.ajax({
           url: qURLdrinkResult2,
           method: "GET"
         }).then(function (response) {
           console.log(response);
-          console.log(qURLdrinkResult1);
+          console.log(qURLdrinkResult2);
   
-          var drinkDisplay1 = (response.drinks[0].strIngredient1 + ", " + 
+          var drinkDisplay2 = (response.drinks[0].strIngredient1 + ", " +
           response.drinks[0].strIngredient2 + ", " + 
           response.drinks[0].strIngredient3 + ", " + 
           response.drinks[0].strIngredient4 + ", " + 
@@ -101,7 +100,36 @@ $(document).ready(function () {
           response.drinks[0].strIngredient9 + ", " + 
           response.drinks[0].strIngredient10);
   
-          console.log(drinkDisplay1);  
+          console.log(drinkDisplay2);
+           
+  
+        });
+        
+        // This call pulls the third ingredient list
+        var qURLdrinkResult3 = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=" + drinkResult3;
+
+        $.ajax({
+          url: qURLdrinkResult3,
+          method: "GET"
+        }).then(function (response) {
+          console.log(response);
+          console.log(qURLdrinkResult3);
+  
+          var drinkDisplay3 = (response.drinks[0].strIngredient1 + ", " + 
+          response.drinks[0].strIngredient2 + ", " + 
+          response.drinks[0].strIngredient3 + ", " + 
+          response.drinks[0].strIngredient4 + ", " + 
+          response.drinks[0].strIngredient5 + ", " + 
+          response.drinks[0].strIngredient6 + ", " + 
+          response.drinks[0].strIngredient7 + ", " + 
+          response.drinks[0].strIngredient8 + ", " + 
+          response.drinks[0].strIngredient9 + ", " + 
+          response.drinks[0].strIngredient10);
+  
+          console.log(drinkDisplay3);
+           
+  
+        }); 
 
       });
 
