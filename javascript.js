@@ -64,7 +64,16 @@ $(document).ready(function () {
         console.log(response);
         console.log(qURLdrinkResult1);
 
-        var drinkDisplay1 = response.drinks.strIngredient1; 
+        var drinkDisplay1 = (response.drinks[0].strIngredient1 + ", " + 
+        response.drinks[0].strIngredient2 + ", " + 
+        response.drinks[0].strIngredient3 + ", " + 
+        response.drinks[0].strIngredient4 + ", " + 
+        response.drinks[0].strIngredient5 + ", " + 
+        response.drinks[0].strIngredient6 + ", " + 
+        response.drinks[0].strIngredient7 + ", " + 
+        response.drinks[0].strIngredient8 + ", " + 
+        response.drinks[0].strIngredient9 + ", " + 
+        response.drinks[0].strIngredient10);
 
         console.log(drinkDisplay1);
 
