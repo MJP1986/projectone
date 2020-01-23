@@ -73,7 +73,7 @@ $(document).ready(function () {
                     console.log(drinkResult1);
                     console.log(drinkResult2);
                     console.log(drinkResult3);
-                    
+
                     // This call pulls the ingredient list from the first randomized drink result above
 
                     var qURLdrinkResult1 = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=" + drinkResult1;
@@ -99,16 +99,16 @@ $(document).ready(function () {
                             var drinkIn1 = response.drinks[0].strInstructions
                             console.log(drinkIn1);
 
-                    // This call pulls the ingredient list from the second randomized drink result above
-                    
-                    var qURLdrinkResult2 = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=" + drinkResult2;
+                            // This call pulls the ingredient list from the second randomized drink result above
+
+                            var qURLdrinkResult2 = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=" + drinkResult2;
 
                             $.ajax({
                                 type: "post",
                                 url: qURLdrinkResult2,
                                 method: "GET",
                                 success: function (response) {
-        
+
                                     var drinkDisplay2 = (response.drinks[0].strIngredient1 + ", " +
                                         response.drinks[0].strIngredient2 + ", " +
                                         response.drinks[0].strIngredient3 + ", " +
@@ -119,17 +119,48 @@ $(document).ready(function () {
                                         response.drinks[0].strIngredient8 + ", " +
                                         response.drinks[0].strIngredient9 + ", " +
                                         response.drinks[0].strIngredient10);
-        
+
                                     console.log(drinkDisplay2);
-        
+
                                     // This call pulls the drink instructions for the first drink
                                     var drinkIn2 = response.drinks[0].strInstructions
                                     console.log(drinkIn2);
-        
-        
-        
+
+
+                                    // This call pulls the ingredient list from the second randomized drink result above
+
+                                    var qURLdrinkResult3 = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=" + drinkResult3;
+
+                                    $.ajax({
+                                        type: "post",
+                                        url: qURLdrinkResult3,
+                                        method: "GET",
+                                        success: function (response) {
+
+                                            var drinkDisplay2 = (response.drinks[0].strIngredient1 + ", " +
+                                                response.drinks[0].strIngredient2 + ", " +
+                                                response.drinks[0].strIngredient3 + ", " +
+                                                response.drinks[0].strIngredient4 + ", " +
+                                                response.drinks[0].strIngredient5 + ", " +
+                                                response.drinks[0].strIngredient6 + ", " +
+                                                response.drinks[0].strIngredient7 + ", " +
+                                                response.drinks[0].strIngredient8 + ", " +
+                                                response.drinks[0].strIngredient9 + ", " +
+                                                response.drinks[0].strIngredient10);
+
+                                            console.log(drinkDisplay3);
+
+                                            // This call pulls the drink instructions for the first drink
+                                            var drinkIn3 = response.drinks[0].strInstructions
+                                            console.log(drinkIn3);
+
+
+
+                                        }
+
+                                    })
                                 }
-        
+
                             })
 
                         }
