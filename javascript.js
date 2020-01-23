@@ -55,7 +55,7 @@ $(document).ready(function () {
 
   var drink = 0
 
-  var Meats = "Pork"
+  var Meats = "Beef"
   // var Meats = $("#").val()
 
   // These calls set the drink results based on the meat choice
@@ -149,6 +149,8 @@ $(document).ready(function () {
                 response.drinks[0].strIngredient10);
 
               console.log(drinkDisplay1);
+
+              // This call pulls the drink instructions for the first drink
               var drinkIn1 = response.drinks[0].strInstructions
               console.log(drinkIn1);
 
@@ -175,12 +177,12 @@ $(document).ready(function () {
 
                   console.log(drinkDisplay2);
 
-                  // This call pulls the drink instructions for the first drink
+                  // This call pulls the drink instructions for the second drink
                   var drinkIn2 = response.drinks[0].strInstructions
                   console.log(drinkIn2);
 
 
-                  // This call pulls the ingredient list from the second randomized drink result above
+                  // This call pulls the ingredient list from the third randomized drink result above
 
                   var qURLdrinkResult3 = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=" + drinkResult3;
 
@@ -203,7 +205,7 @@ $(document).ready(function () {
 
                       console.log(drinkDisplay3);
 
-                      // This call pulls the drink instructions for the first drink
+                      // This call pulls the drink instructions for the third drink
                       var drinkIn3 = response.drinks[0].strInstructions
                       console.log(drinkIn3);
 
