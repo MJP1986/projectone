@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="assests/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <nav>
         <div class="nav-wrapper">
@@ -35,24 +37,27 @@
                         <option value="fish" id="qmean2">Fish</option>
                         <option value="beef" id="qmean3">Beef</option>
                         <option value="pork" id="qmean4">Pork</option>
-                        <option value="vegetable" id="qmean5">Vegetable</option>
-                        <option value="vegan" id="qmean6">Vegan</option>
+                        <option value="veggie" id="qmean5">Veggie</option>
+                        <option value="shellfish" id="qmean6">Shellfish</option>
                     </select>
                 </div>
             </div>
             <div class="col s6">
                 <div class="divider"></div>
                 <div class="section">
-                    <h5 class="option-header">Meal Time:</h5>
+                    <h5 class="option-header">Diet:</h5>
                     <label>Browser Select</label>
                     <select class="browser-default" id="mtimes">
                         <option value="" disabled selected>Choose your option</option>
-                        <option value="breakfast" id="mtime1">Breakfast</option>
-                        <option value="brunch" id="mtime1">Brunch</option>
-                        <option value="lunch" id="mtime1">Lunch</option>
-                        <option value="linner" id="mtime1">Linner</option>
-                        <option value="dinner" id="mtime1">Dinner</option>
-                        <option value="snack" id="mtime1">Snack</option>
+                        <option value="glutenFree" id="diet1">Gluten Free</option>
+                        <option value="ketogenic" id="diet2">Ketogenic</option>
+                        <option value="vegetarian" id="diet3">Vegetarian</option>
+                        <option value="lactoVegetarian" id="diet4">Lacto-Vegetarian</option>
+                        <option value="vegan" id="diet5">Vegan</option>
+                        <option value="pescetarian" id="diet6">Pescetarian</option>
+                        <option value="paleo" id="diet7">Paleo</option>
+                        <option value="primal" id="diet8">Primal</option>
+                        <option value="whole30" id="diet9">Whole30</option>
                     </select>
                 </div>
             </div>
@@ -61,15 +66,21 @@
             <div class="col s6">
                 <div class="divider"></div>
                 <div class="section">
-                    <h5 class="option-header">Prep Time:</h5>
+                    <h5 class="option-header">Allergies:</h5>
                     <label>Browser Select</label>
                     <select class="browser-default" id="ptimes">
                         <option value="" disabled selected>Choose your option</option>
-                        <option value="15min" id="ptime1">15 min or less</option>
-                        <option value="30min" id="ptime2">30 min or less</option>
-                        <option value="45min" id="ptime3">45 min or less</option>
-                        <option value="1hr" id="ptime4">1 hour or less</option>
-                        <option value="1hrmore" id="ptime5">Above 1 hour</option>
+                        <option value="dairy" id="int1">Dairy</option>
+                        <option value="egg" id="int2">Egg</option>
+                        <option value="gluten" id="int3">Gluten</option>
+                        <option value="grain" id="int4">Grain</option>
+                        <option value="peanut" id="int5">Peanut</option>
+                        <option value="seafood" id="int6">Seafood</option>
+                        <option value="sesame" id="int7">Sesame</option>
+                        <option value="shellfish" id="int8">Shellfish</option>
+                        <option value="soy" id="int9">Soy</option>
+                        <option value="sulfite" id="int10">Sulfite</option>
+                        <option value="wheat" id="int11">Wheat</option>
                     </select>
                 </div>
             </div>
@@ -80,21 +91,28 @@
                     <label>Browser Select</label>
                     <select class="browser-default" id="ctypes">
                         <option value="" disabled selected>Choose your option</option>
-                        <option value="american" id="ctype1">American</option>
-                        <option value="asian" id="ctype2">Asian</option>
-                        <option value="caribbean" id="ctype3">Caribbean</option>
-                        <option value="chinese" id="ctype4">Chinese</option>
-                        <option value="french" id="ctype5">French</option>
-                        <option value="indian" id="ctype6">Indian</option>
-                        <option value="italian" id="ctype7">Italian</option>
-                        <option value="japanese" id="ctype8">Japanese</option>
-                        <option value="kosher" id="ctype9">Kosher</option>
-                        <option value="mediterranean" id="ctype10">Mediterranean</option>
-                        <option value="mexican" id="ctype11">Mexican</option>
-                        <option value="middleeastern" id="ctype12">Middle Eastern</option>
-                        <option value="nordic" id="ctype13">Nordic</option>
-                        <option value="southamerican" id="ctype14">South American</option>
-                        <option value="southasian" id="ctype15">South Asian</option>
+                        <option value="african" id="ctype1">African</option>
+                        <option value="american" id="ctype2">American</option>
+                        <option value="cajun" id="ctype3">Cajun</option>
+                        <option value="caribbean" id="ctype4">Caribbean</option>
+                        <option value="chinese" id="ctype5">Chinese</option>
+                        <option value="french" id="ctype6">French</option>
+                        <option value="german" id="ctype7">German</option>
+                        <option value="greek" id="ctype8">Greek</option>
+                        <option value="indian" id="ctype9">Indian</option>
+                        <option value="italian" id="ctype10">Italian</option>
+                        <option value="japanese" id="ctype11">Japanese</option>
+                        <option value="jewish" id="ctype12">Kosher</option>
+                        <option value="korean" id="ctype13">Korean</option>
+                        <option value="latinAmerican" id="ctype14">Latin American</option>
+                        <option value="mediterranean" id="ctype15">Mediterranean</option>
+                        <option value="mexican" id="ctype16">Mexican</option>
+                        <option value="middleeastern" id="ctype17">Middle Eastern</option>
+                        <option value="nordic" id="ctype18">Nordic</option>
+                        <option value="southern" id="ctype19">Southern</option>
+                        <option value="spanish" id="ctype20">Spanish</option>
+                        <option value="thai" id="ctype21">Thai</option>
+                        <option value="vienamese" id="ctype22">Vietnamese</option>
                     </select>
                 </div>
             </div>
@@ -106,36 +124,42 @@
     </div>
     </div>
     <div class="row main-container">
-<!-- first container -->
+        <!-- first container -->
         <div class="container col s8 offset-s2" id="card1">
             <div class="row">
-                <div class="card horizontal">
+                <div class="card horizontal hoverable">
                     <div class="card-image">
-                        <img src="" id="fimage1">
+                        <img src="" id="fimage0">
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
-                            <ul style="list-style-type:none;" class="drink-card">
-                                <h3 id="fname1">test</h3>
-                                <li id="frink-ing1">ingredients:</li>
-                                <li id="frink-ins1">instructions:</li>
+                            <ul style="list-style-type:none;" class="food-card">
+                                <h3 id="fname0">Title</h3>
+                                <li class="iHeader">Ingredients:</li>
+                                    <li id="frink-ing1"></li>
+                                    <br>
+                                    <li class="iHeader">Instructions:</li>
+                                <li id="frink-ins1"></li>
                             </ul>
                         </div>
-                        <div class="card-action">
-                            <a href="#">This is a link</a>
+                        <div class="card-action teal lighten-2">
+                            <a class="white-text" id="food-link0" href="#">This is a link</a>
                         </div>
                     </div>
                 </div>
-                <div class="card horizontal">
+                <div class="card horizontal hoverable">
                     <div class="card-image">
                         <img src="" id="dimage1">
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
                             <ul style="list-style-type:none;" class="drink-card">
-                                <h3 id="dname1">test</h3>
-                                <li id="drink-ing1">ingredients:</li>
-                                <li id="drink-ins1">instructions:</li>
+                                <h3 id="dname1">Title</h3>
+                                <li class="iHeader">Ingredients:</li>
+                                <li id="drink-ing1"></li>
+                                <br>
+                                <li class="iHeader">Instructions:</li>
+                                <li id="drink-ins1"></li>
                             </ul>
                         </div>
                         <div class="card-action">
@@ -145,88 +169,101 @@
                 </div>
             </div>
         </div>
-<!-- middle container -->
-<div class="container col s8 offset-s2" id="card2">
-    <div class="row">
-        <div class="card horizontal">
-            <div class="card-image">
-                <img src="" id="fimage2">
-            </div>
-            <div class="card-stacked">
-                <div class="card-content">
-                    <ul style="list-style-type:none;" class="drink-card">
-                        <h3 id="fname2">test</h3>
-                        <li id="frink-ing2">ingredients:</li>
-                        <li id="frink-ins2">instructions:</li>
-                    </ul>
+        <!-- middle container -->
+        <div class="container col s8 offset-s2" id="card2">
+            <div class="row">
+                <div class="card horizontal hoverable">
+                    <div class="card-image">
+                        <img src="" id="fimage1">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <ul style="list-style-type:none;" class="food-card">
+                                <h3 id="fname1">Title</h3>
+                                <li class="iHeader">Ingredients:</li>
+                                <li id="frink-ing2"></li>
+                                <br>
+                                <li class="iHeader">Instructions:</li>
+                                <li id="frink-ins2"></li>
+                            </ul>
+                        </div>
+                        <div class="card-action">
+                            <a id = "food-link1" href="#">This is a link</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
+                <div class="card horizontal hoverable">
+                    <div class="card-image">
+                        <img src="" id="dimage2">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <ul style="list-style-type:none;" class="drink-card">
+                                <h3 id="dname2">Title</h3>
+                                <li class="iHeader">Ingredients:</li>
+                                <li id="drink-ing2"></li>
+                                <br>
+                                <li class="iHeader">Instructions:</li>
+                                <li id="drink-ins2"></li>
+                            </ul>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="card horizontal">
-            <div class="card-image">
-                <img src="" id="dimage2">
-            </div>
-            <div class="card-stacked">
-                <div class="card-content">
-                    <ul style="list-style-type:none;" class="drink-card">
-                        <h3 id="dname2">test</h3>
-                        <li id="drink-ing2">ingredients:</li>
-                        <li id="drink-ins2">instructions:</li>
-                    </ul>
+        <br><br>
+        <!--third containter-->
+        <div class="container col s8 offset-s2" id="card3">
+            <div class="row">
+                <div class="card horizontal hoverable">
+                    <div class="card-image">
+                        <img src="" id="fimage2">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <ul style="list-style-type:none;" class="food-card">
+                                <h3 id="fname2">Title</h3>
+                                <li class="iHeader">Ingredients:</li>
+                                <li id="frink-ing3"></li>
+                                <br>
+                                <li class="iHeader">Instructions:</li>
+                                <li id="frink-ins3"></li>
+                            </ul>
+                        </div>
+                        <div class="card-action">
+                            <a href="#" id="food-link2">This is a link</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
+                <div class="card horizontal hoverable">
+                    <div class="card-image">
+                        <img src="" id="dimage3">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <ul style="list-style-type:none;" class="drink-card">
+                                <h3 id="dname3">Title</h3>
+                                <li class="iHeader">Ingredients:</li>
+                                <li id="drink-ing3"></li>
+                                <br>
+                                <li class="iHeader">Instructions:</li>
+                                <li id="drink-ins3"></li>
+                            </ul>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<br><br>
-<!--third containter-->
-<div class="container col s8 offset-s2" id="card3">
-    <div class="row">
-        <div class="card horizontal">
-            <div class="card-image">
-                <img src="" id="fimage3">
-            </div>
-            <div class="card-stacked">
-                <div class="card-content">
-                    <ul style="list-style-type:none;" class="drink-card">
-                        <h3 id="fname3">test</h3>
-                        <li id="frink-ing3">ingredients:</li>
-                        <li id="frink-ins3">instructions:</li>
-                    </ul>
-                </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div>
-            </div>
-        </div>
-        <div class="card horizontal">
-            <div class="card-image">
-                <img src="" id="dimage3">
-            </div>
-            <div class="card-stacked">
-                <div class="card-content">
-                    <ul style="list-style-type:none;" class="drink-card">
-                        <h3 id="dname3">test</h3>
-                        <li id="drink-ing3">ingredients:</li>
-                        <li id="drink-ins3">instructions:</li>
-                    </ul>
-                </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-</div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="javascript.js"></script>
 </body>
+
 </html>
