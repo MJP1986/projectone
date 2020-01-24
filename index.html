@@ -12,46 +12,45 @@
 <body>
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo center">Logo</a>
+            <a href="index.html" class="brand-logo center"><img id="mjmlogo" src ="assests/mjm logo.jpg" alt="My Logo"></a>
         </div>
     </nav>
     <div id="food-header">
         <img id="banner" src="https://d3vhp0ldxntuok.cloudfront.net/image/242/b4/0.5,0.5/small">
-        <div id="rtext">
-            <h1>recipes</h1>
-        </div>
+        <div id="rtext">Recipes</div>
     </div>
     <div id=> </div>
+    <div class="mcontainer">
     <div class="row">
-        <div class="col s6">
+            <div class="col s6">
             <div class="divider"></div>
             <div class="section">
-                <h5>Query Meal Type:</h5>
+                <h5 class="option-header">Query Meal Type:</h5>
                 <label>Browser Select</label>
-                <select class="browser-default">
+                <select class="browser-default" id="qmeals">
                     <option value="" disabled selected>Choose your option</option>
-                    <option value="1">Chicken</option>
-                    <option value="2">Fish</option>
-                    <option value="3">Beef</option>
-                    <option value="4">Pork</option>
-                    <option value="5">Vegetable</option>
-                    <option value="6">Vegan</option>
+                    <option value="chicken" id="qmeal1">Chicken</option>
+                    <option value="fish" id="qmean2">Fish</option>
+                    <option value="beef" id="qmean3">Beef</option>
+                    <option value="pork" id="qmean4">Pork</option>
+                    <option value="vegetable" id="qmean5">Vegetable</option>
+                    <option value="vegan" id="qmean6">Vegan</option>
                 </select>
             </div>
         </div>
         <div class="col s6">
             <div class="divider"></div>
             <div class="section">
-                <h5>Meal Time:</h5>
+                <h5 class="option-header">Meal Time:</h5>
                 <label>Browser Select</label>
-                <select class="browser-default">
+                <select class="browser-default" id="mtimes">
                     <option value="" disabled selected>Choose your option</option>
-                    <option value="1">Breakfast</option>
-                    <option value="2">Brunch</option>
-                    <option value="3">Lunch</option>
-                    <option value="4">Linner</option>
-                    <option value="5">Dinner</option>
-                    <option value="6">Snack</option>
+                    <option value="breakfast" id="mtime1">Breakfast</option>
+                    <option value="brunch" id="mtime1">Brunch</option>
+                    <option value="lunch" id="mtime1">Lunch</option>
+                    <option value="linner" id="mtime1">Linner</option>
+                    <option value="dinner" id="mtime1">Dinner</option>
+                    <option value="snack" id="mtime1">Snack</option>
                 </select>
             </div>
         </div>
@@ -60,45 +59,49 @@
         <div class="col s6">
             <div class="divider"></div>
             <div class="section">
-                <h5>Prep Time:</h5>
+                <h5 class="option-header">Prep Time:</h5>
                 <label>Browser Select</label>
-                <select class="browser-default">
+                <select class="browser-default" id="ptimes">
                     <option value="" disabled selected>Choose your option</option>
-                    <option value="1">15 min or less</option>
-                    <option value="2">30 min or less</option>
-                    <option value="3">45 min or less</option>
-                    <option value="4">1 hour or less</option>
-                    <option value="5">Above 1 hour</option>
+                    <option value="15min" id="ptime1">15 min or less</option>
+                    <option value="30min" id="ptime2">30 min or less</option>
+                    <option value="45min" id="ptime3">45 min or less</option>
+                    <option value="1hr" id="ptime4">1 hour or less</option>
+                    <option value="1hrmore" id="ptime5">Above 1 hour</option>
                 </select>
             </div>
         </div>
         <div class="col s6">
             <div class="divider"></div>
             <div class="section">
-                <h5>Cuisine Type:</h5>
+                <h5 class="option-header">Cuisine Type:</h5>
                 <label>Browser Select</label>
-                <select class="browser-default">
+                <select class="browser-default" id="ctypes">
                     <option value="" disabled selected>Choose your option</option>
-                    <option value="1">American</option>
-                    <option value="2">Asian</option>
-                    <option value="3">Caribbean</option>
-                    <option value="3">Chinese</option>
-                    <option value="3">French</option>
-                    <option value="3">Indian</option>
-                    <option value="3">Italian</option>
-                    <option value="3">Japanese</option>
-                    <option value="3">Kosher</option>
-                    <option value="3">Mediterranean</option>
-                    <option value="3">Mexican</option>
-                    <option value="3">Middle Eastern</option>
-                    <option value="3">Nordic</option>
-                    <option value="3">South American</option>
-                    <option value="3">South Asian</option>
+                    <option value="american" id="ctype1">American</option>
+                    <option value="asian" id="ctype2">Asian</option>
+                    <option value="caribbean" id="ctype3">Caribbean</option>
+                    <option value="chinese" id="ctype4">Chinese</option>
+                    <option value="french" id="ctype5">French</option>
+                    <option value="indian" id="ctype6">Indian</option>
+                    <option value="italian" id="ctype7">Italian</option>
+                    <option value="japanese" id="ctype8">Japanese</option>
+                    <option value="kosher" id="ctype9">Kosher</option>
+                    <option value="mediterranean" id="ctype10">Mediterranean</option>
+                    <option value="mexican" id="ctype11">Mexican</option>
+                    <option value="middleeastern" id="ctype12">Middle Eastern</option>
+                    <option value="nordic" id="ctype13">Nordic</option>
+                    <option value="southamerican" id="ctype14">South American</option>
+                    <option value="southasian" id="ctype15">South Asian</option>
                 </select>
             </div>
         </div>
-        <a class="waves-effect waves-light btn-large">Button</a>
-        <a class="waves-effect waves-light btn-large">Button</a>
+    </div>
+    </div>
+        <div class="buttons">
+        <a class="waves-effect waves-light btn-large button" id="sbutton">Submit</a>
+        <a class="waves-effect waves-light btn-large button" id="rbutton">Reset</a>
+        </div>
     </div>
     <div class="row">
 <!-- first container -->
@@ -106,12 +109,15 @@
             <div class="row">
                 <div class="card">
                     <div class="card-image">
-                        <img src="images/sample-1.jpg">
+                        <img src="" id="fimage1">
                         <span class="card-title">Card Title</span>
                     </div>
                     <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
+                        <ul style="list-style-type:none;" class="food-card">
+                            <h3 id="fname1">test</h3>
+                            <li id="food-ing1">ingredients:</li>
+                            <li id="food-ins1">instructions:</li>
+                        </ul>
                     </div>
                     <div class="card-action">
                         <a href="#">This is a link</a>
@@ -121,11 +127,15 @@
             <div class="row">
                 <div class="card horizontal">
                     <div class="card-image">
-                        <img src="https://lorempixel.com/100/190/nature/6">
+                        <img src="" id="dimage1">
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information.</p>
+                            <ul style="list-style-type:none;" class="drink-card">
+                                <h3 id="dname1">test</h3>
+                                <li id="drink-ing1">ingredients:</li>
+                                <li id="drink-ins1">instructions:</li>
+                            </ul>
                         </div>
                         <div class="card-action">
                             <a href="#">This is a link</a>
@@ -135,49 +145,59 @@
             </div>
         </div>
 <!-- middle container -->
-        <div class="container col s12 m4">
-            <div class="row">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="images/sample-1.jpg">
-                        <span class="card-title">Card Title</span>
-                    </div>
-                    <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">This is a link</a>
-                    </div>
-                </div>
+<div class="container col s12 m4">
+    <div class="row">
+        <div class="card">
+            <div class="card-image">
+                <img src="" id="fimage2">
+                <span class="card-title">Card Title</span>
             </div>
-            <div class="row">
-                <div class="card horizontal">
-                    <div class="card-image">
-                        <img src="https://lorempixel.com/100/190/nature/6">
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information.</p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">This is a link</a>
-                        </div>
-                    </div>
+            <div class="card-content">
+                <ul style="list-style-type:none;" class="food-card">
+                    <h3 id="fname2">test</h3>
+                    <li id="food-ing2">ingredients:</li>
+                    <li id="food-ins2">instructions:</li>
+                </ul>
+            </div>
+            <div class="card-action">
+                <a href="#">This is a link</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card horizontal">
+            <div class="card-image">
+                <img src="" id="dimage2">
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <ul style="list-style-type:none;" class="drink-card">
+                        <h3 id="dname2">test</h3>
+                        <li id="drink-ing2">ingredients:</li>
+                        <li id="drink-ins2">instructions:</li>
+                    </ul>
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
                 </div>
             </div>
         </div>
+    </div>
+</div>
 <!-- third containter -->
         <div class="container col s12 m4">
             <div class="row">
                 <div class="card">
                     <div class="card-image">
-                        <img src="images/sample-1.jpg">
+                        <img src="" id="fimage3">
                         <span class="card-title">Card Title</span>
                     </div>
                     <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
+                        <ul style="list-style-type:none;" class="food-card">
+                            <h3 id="fname3">test</h3>
+                            <li id="food-ing3">ingredients:</li>
+                            <li id="food-ins3">instructions:</li>
+                        </ul>
                     </div>
                     <div class="card-action">
                         <a href="#">This is a link</a>
@@ -187,11 +207,15 @@
             <div class="row">
                 <div class="card horizontal">
                     <div class="card-image">
-                        <img src="https://lorempixel.com/100/190/nature/6">
+                        <img src="" id="dimage3">
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information.</p>
+                            <ul style="list-style-type:none;" class="drink-card">
+                                <h3 id="dname3">test</h3>
+                                <li id="drink-ing3">ingredients:</li>
+                                <li id="drink-ins3">instructions:</li>
+                            </ul>
                         </div>
                         <div class="card-action">
                             <a href="#">This is a link</a>
